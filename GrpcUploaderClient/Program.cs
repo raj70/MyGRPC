@@ -14,7 +14,7 @@ Console.WriteLine("Starting call");
 var call = client.UploadFile();
 
 Console.WriteLine("Sending file metadata");
-await call.RequestStream.WriteAsync(new UploadFileRequest
+await call.RequestStream.WriteAsync(new Rs.Net.Core.MyGRPC.FileStream
 {
     Metadata = new FileMetadata
     {
@@ -34,7 +34,7 @@ while (true)
     }
 
     Console.WriteLine("Sending file data chunk of length " + count);
-    await call.RequestStream.WriteAsync(new UploadFileRequest
+    await call.RequestStream.WriteAsync(new Rs.Net.Core.MyGRPC.FileStream
     {
         Data = UnsafeByteOperations.UnsafeWrap(buffer.AsMemory(0, count))
     });
@@ -50,5 +50,3 @@ Console.WriteLine("Shutting down");
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
 
-
-Console.WriteLine("Hello, World!");

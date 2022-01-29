@@ -7,15 +7,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Net.Core.gRPC", "Rs.Net.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Net.Core.GrpcService", "Rs.Net.Core.GrpcService\Rs.Net.Core.GrpcService.csproj", "{5C9E2F6D-FA66-4FF2-8720-24DA1CE7398F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{DC41DC98-CF19-4B1F-B7A3-F1F659C57A52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{DC41DC98-CF19-4B1F-B7A3-F1F659C57A52}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{AACFC3A2-6FCE-4DCB-97B3-CBB6A46CC256}"
 	ProjectSection(SolutionItems) = preProject
+		Protos\download.proto = Protos\download.proto
 		Rs.Net.Core.MyGRPC\Protos\greet.proto = Rs.Net.Core.MyGRPC\Protos\greet.proto
+		Protos\model.proto = Protos\model.proto
 		Protos\upload.proto = Protos\upload.proto
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcUploaderClient", "GrpcUploaderClient\GrpcUploaderClient.csproj", "{5F95B874-CB0D-4BE1-A636-80C908A4A224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcUploaderClient", "GrpcUploaderClient\GrpcUploaderClient.csproj", "{5F95B874-CB0D-4BE1-A636-80C908A4A224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcDownloadClient", "GrpcDownloadClient\GrpcDownloadClient.csproj", "{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{5F95B874-CB0D-4BE1-A636-80C908A4A224}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F95B874-CB0D-4BE1-A636-80C908A4A224}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F95B874-CB0D-4BE1-A636-80C908A4A224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

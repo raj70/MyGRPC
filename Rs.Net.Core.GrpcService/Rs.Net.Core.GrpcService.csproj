@@ -6,9 +6,21 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="uploads\argenti_logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="uploads\argenti_logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 	<!--https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-6.0#c-tooling-support-for-proto-files-->
 	<ItemGroup>
+		<Protobuf Include="..\Protos\model.proto" GrpcServices="Server" />
 		<Protobuf Include="..\Protos\upload.proto" GrpcServices="Server" />
+		<Protobuf Include="..\Protos\download.proto" GrpcServices="Server" />
 		<Protobuf Include="..\Protos\greet.proto" GrpcServices="Server" />
 	</ItemGroup>
 

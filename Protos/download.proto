@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Rs.Net.Core.MyGRPC";
+
+import "model.proto";
+
+package download;
+
+service Downloader{
+	// 
+	rpc DownloadFile(FileId) returns (stream FileStream);
+}

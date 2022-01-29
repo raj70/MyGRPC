@@ -13,7 +13,7 @@ namespace Rs.Net.Core.GrpcService.Services
             this.logger = logger;
             this.configuration = configuration;
         }
-        public override async Task<UploadFileResponse> UploadFile(IAsyncStreamReader<UploadFileRequest> requestStream, ServerCallContext context)
+        public override async Task<FileId> UploadFile(IAsyncStreamReader<MyGRPC.FileStream> requestStream, ServerCallContext context)
         {
             var fileId = Guid.NewGuid();
             var uploadPath = Path.Combine(configuration["StoredFilesPath"], fileId.ToString());
@@ -33,7 +33,7 @@ namespace Rs.Net.Core.GrpcService.Services
                 }
             }
 
-            return new UploadFileResponse { Id = fileId.ToString()};
+            return new FileId { Id = fileId.ToString()};
         }
     }
 }

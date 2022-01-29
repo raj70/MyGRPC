@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Rs.Net.Core.MyGRPC";
+
+
+message FileStream{
+	FileMetadata metadata = 1;
+	bytes data = 2;
+}
+
+message FileMetadata{
+	string file_name = 1;
+}
+
+message FileId{
+	string id = 1;
+}

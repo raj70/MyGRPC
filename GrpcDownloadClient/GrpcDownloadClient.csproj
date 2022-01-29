@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,17 +9,16 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.19.4" />
-    <PackageReference Include="Grpc.Net.Client" Version="2.42.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.42.0" />
     <PackageReference Include="Grpc.Tools" Version="2.43.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
-	<!--https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-6.0#c-tooling-support-for-proto-files-->
 	<ItemGroup>
 		<Protobuf Include="..\Protos\model.proto" GrpcServices="Client" />
-		<Protobuf Include="..\Protos\greet.proto" GrpcServices="Client" />
+		<Protobuf Include="..\Protos\download.proto" GrpcServices="Client" />
 	</ItemGroup>
 
 </Project>
