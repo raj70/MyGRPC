@@ -9,13 +9,11 @@
 	<!--https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-6.0#c-tooling-support-for-proto-files-->
 	<ItemGroup>
 		<Protobuf Include="..\Protos\upload.proto" GrpcServices="Server" />
+		<Protobuf Include="..\Protos\greet.proto" GrpcServices="Server" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Grpc.AspNetCore" Version="2.42.0" />
 	</ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Rs.Net.Core.MyGRPC\Rs.Net.Core.MyGRPC.csproj" />
-  </ItemGroup>
 
 </Project>

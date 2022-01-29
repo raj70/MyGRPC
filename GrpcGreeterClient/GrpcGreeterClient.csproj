@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -16,8 +16,9 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Rs.Net.Core.MyGRPC\Rs.Net.Core.MyGRPC.csproj" />
-  </ItemGroup>
+	<!--https://docs.microsoft.com/en-us/aspnet/core/grpc/?view=aspnetcore-6.0#c-tooling-support-for-proto-files-->
+	<ItemGroup>
+		<Protobuf Include="..\Protos\greet.proto" GrpcServices="Client" />
+	</ItemGroup>
 
 </Project>

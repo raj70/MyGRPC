@@ -5,14 +5,13 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Net.Core.gRPC", "Rs.Net.Core.gRPC\Rs.Net.Core.gRPC.csproj", "{83785B81-DF93-4EE1-B2BA-26EC5D85CBD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Net.Core.MyGRPC", "Rs.Net.Core.MyGRPC\Rs.Net.Core.MyGRPC.csproj", "{361F276A-6325-4BE8-A4A7-004A21CE1BA0}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rs.Net.Core.GrpcService", "Rs.Net.Core.GrpcService\Rs.Net.Core.GrpcService.csproj", "{5C9E2F6D-FA66-4FF2-8720-24DA1CE7398F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcGreeterClient", "GrpcGreeterClient\GrpcGreeterClient.csproj", "{DC41DC98-CF19-4B1F-B7A3-F1F659C57A52}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{AACFC3A2-6FCE-4DCB-97B3-CBB6A46CC256}"
 	ProjectSection(SolutionItems) = preProject
+		Rs.Net.Core.MyGRPC\Protos\greet.proto = Rs.Net.Core.MyGRPC\Protos\greet.proto
 		Protos\upload.proto = Protos\upload.proto
 	EndProjectSection
 EndProject
@@ -28,10 +27,6 @@ Global
 		{83785B81-DF93-4EE1-B2BA-26EC5D85CBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83785B81-DF93-4EE1-B2BA-26EC5D85CBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83785B81-DF93-4EE1-B2BA-26EC5D85CBD9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{361F276A-6325-4BE8-A4A7-004A21CE1BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{361F276A-6325-4BE8-A4A7-004A21CE1BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{361F276A-6325-4BE8-A4A7-004A21CE1BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{361F276A-6325-4BE8-A4A7-004A21CE1BA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5C9E2F6D-FA66-4FF2-8720-24DA1CE7398F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5C9E2F6D-FA66-4FF2-8720-24DA1CE7398F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9E2F6D-FA66-4FF2-8720-24DA1CE7398F}.Release|Any CPU.ActiveCfg = Release|Any CPU
