@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore" Version="2.42.0" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rs.Net.Core.MyGRPC\Rs.Net.Core.MyGRPC.csproj" />
+  </ItemGroup>
+
+</Project>
