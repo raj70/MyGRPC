@@ -20,7 +20,7 @@ namespace Rs.Net.Core.Grpc.Clients.RegistrationServices.Services
         public async override Task<ResponseMessage> Rego(Clients.Models.User request, ServerCallContext context)
         {
             // _logger.Log(LogLevel.Information, "Context", context.Host, context.Peer);
-
+            context.RequestHeaders.ToList().ForEach(x => Console.WriteLine(x));
             var user = request.ToModel();
             if (!_users.Contains(user))
             {
