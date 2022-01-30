@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option csharp_namespace = "Rs.Net.Core.Grpc.Clients.Dtos";
+
+
+message ResponseMessage{
+	string code = 1;
+	string messages = 2;
+}

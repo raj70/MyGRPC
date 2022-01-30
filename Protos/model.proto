@@ -3,6 +3,7 @@ syntax = "proto3";
 option csharp_namespace = "Rs.Net.Core.MyGRPC";
 
 
+
 message FileStream{
 	FileMetadata metadata = 1;
 	bytes data = 2;

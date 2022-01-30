@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option csharp_namespace = "Rs.Net.Core.Grpc.Clients";
+
+import "client_models.proto";
+import "client_dtos.proto";
+
+package ClientsRG;
+
+service ClientRegistrater{
+	rpc Rego(User) returns (ResponseMessage); 
+}

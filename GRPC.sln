@@ -11,6 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcGreeterClient", "GrpcGr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{AACFC3A2-6FCE-4DCB-97B3-CBB6A46CC256}"
 	ProjectSection(SolutionItems) = preProject
+		Protos\client_dtos.proto = Protos\client_dtos.proto
+		Protos\client_models.proto = Protos\client_models.proto
+		Protos\client_service.proto = Protos\client_service.proto
 		Protos\download.proto = Protos\download.proto
 		Rs.Net.Core.MyGRPC\Protos\greet.proto = Rs.Net.Core.MyGRPC\Protos\greet.proto
 		Protos\model.proto = Protos\model.proto
@@ -19,7 +22,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{AACFC3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcUploaderClient", "GrpcUploaderClient\GrpcUploaderClient.csproj", "{5F95B874-CB0D-4BE1-A636-80C908A4A224}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcDownloadClient", "GrpcDownloadClient\GrpcDownloadClient.csproj", "{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcDownloadClient", "GrpcDownloadClient\GrpcDownloadClient.csproj", "{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rs.Net.Core.Grpc.Clients.RegistrationServices", "Rs.Net.Core.Grpc.Clients.RegistrationServices\Rs.Net.Core.Grpc.Clients.RegistrationServices.csproj", "{65917610-88A2-4AD7-BCF7-DCDCD1AD533A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClientRegistrationClient", "GrpcClientRegistrationClient\GrpcClientRegistrationClient.csproj", "{3B5D802D-B188-42CE-B33D-437296B5F189}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +54,14 @@ Global
 		{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8335AC3C-CD97-4BDD-BFBD-539DD268CEDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65917610-88A2-4AD7-BCF7-DCDCD1AD533A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65917610-88A2-4AD7-BCF7-DCDCD1AD533A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65917610-88A2-4AD7-BCF7-DCDCD1AD533A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65917610-88A2-4AD7-BCF7-DCDCD1AD533A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B5D802D-B188-42CE-B33D-437296B5F189}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5D802D-B188-42CE-B33D-437296B5F189}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5D802D-B188-42CE-B33D-437296B5F189}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5D802D-B188-42CE-B33D-437296B5F189}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

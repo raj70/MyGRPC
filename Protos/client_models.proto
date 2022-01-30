@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option csharp_namespace = "Rs.Net.Core.Grpc.Clients.Models";
+
+import "google/protobuf/timestamp.proto";
+
+
+message User{	
+	// https://docs.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/protobuf-data-types#systemguid
+	string user_id_guid = 1;
+	string first_name = 2;
+	string middle_name = 3;
+	string last_name = 4;
+	string email_address = 5;
+	// https://docs.microsoft.com/en-us/dotnet/architecture/grpc-for-wcf-developers/protobuf-data-types#dates-and-times
+	// https://developers.google.com/protocol-buffers/docs/reference/csharp/class/google/protobuf/well-known-types/timestamp?hl=en
+	google.protobuf.Timestamp date_of_birth = 6;
+
+	Address address = 7;
+}
+
+message Address{
+	string address_id = 1;
+	string address_line1 = 2;
+	string address_line2 = 3;
+	string state = 4;
+	int32 post_code = 5;
+	string country = 6;
+}
